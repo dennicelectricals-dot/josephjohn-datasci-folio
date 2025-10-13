@@ -32,15 +32,6 @@ const About = () => {
                   and Streamlit. Conversant with LLMs and NLP, with a focus on real-world applications. 
                   Skilled at simplifying complex concepts for diverse audiences.
                 </p>
-
-                <div className="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
-                  <span className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
-                    Based in Jos, Nigeria
-                  </span>
-                  <span className="px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium border border-secondary/20">
-                    Open to Opportunities
-                  </span>
-                </div>
               </div>
             </div>
           </Card>
