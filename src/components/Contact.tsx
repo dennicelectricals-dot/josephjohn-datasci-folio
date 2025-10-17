@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, Twitter, Github } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -53,17 +53,17 @@ const Contact = () => {
       color: "secondary",
     },
     {
-      icon: Linkedin,
-      label: "LinkedIn",
-      value: "Connect on LinkedIn",
-      link: "#",
+      icon: Twitter,
+      label: "X (Twitter)",
+      value: "@iamkvngjay01",
+      link: "https://x.com/iamkvngjay01",
       color: "primary",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "View my repositories",
-      link: "#",
+      value: "@Iamkvng01",
+      link: "https://github.com/Iamkvng01",
       color: "secondary",
     },
   ];

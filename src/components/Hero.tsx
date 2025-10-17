@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -58,20 +57,9 @@ const Hero = () => {
             size="lg"
             variant="outline"
             className="group border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-6 text-lg transition-all"
-            onClick={() => window.open('#', '_blank')}
+            onClick={() => window.open('/Joseph_John_Resume.docx', '_blank')}
           >
             Download Resume
-          </Button>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="text-primary hover:text-primary/80"
-            onClick={() => scrollToSection('about')}
-          >
-            <ArrowDown className="w-8 h-8" />
           </Button>
         </div>
       </div>
