@@ -1,39 +1,35 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Skin Cancer Detection Model",
-      description: "Advanced deep learning model using TensorFlow for medical image classification. Deployed as an interactive Streamlit web application for real-time cancer detection.",
-      tech: ["TensorFlow", "Keras", "Streamlit", "Python", "Computer Vision"],
-      github: "#",
-      demo: "#",
+      title: "Desights AI Prediction",
+      description: "Building a model to forecast the Federal Reserve's interest rate decisions, classifying it into one of five possible rate changes: -0.50%, -0.25%, 0%, +0.25%, or +0.50%.",
+      tech: ["Machine Learning", "Python", "Financial Forecasting", "Data Analysis"],
+      github: "https://github.com/Iamkvng01/Desights-AI-Prediction",
       color: "primary",
     },
     {
-      title: "Cancer Detection Web App",
-      description: "Final year project combining image processing and machine learning for accurate cancer detection. Built with a focus on accessibility and user experience.",
-      tech: ["Python", "ML", "Image Processing", "Web Development"],
-      github: "#",
-      demo: "#",
+      title: "PladaAI - Plagiarism Detector",
+      description: "User-friendly web app designed to detect and prevent plagiarism in academic assignments. Leveraging machine learning, NLP, and a grammar semantics hybrid method for real-time plagiarism detection.",
+      tech: ["Machine Learning", "NLP", "Python", "Web Development"],
+      github: "https://github.com/Iamkvng01/Plagiarism-Detector",
       color: "secondary",
     },
     {
-      title: "Interactive Data Dashboards",
-      description: "Created compelling data visualizations and interactive dashboards using Streamlit and Power BI for effective data storytelling and business insights.",
-      tech: ["Streamlit", "Power BI", "Python", "Data Visualization"],
-      github: "#",
-      demo: "#",
+      title: "Cancer Detector using Images",
+      description: "Streamlit-based skin cancer detection system using deep learning (Xception CNN model) to classify skin lesions into 9 different classes. Trained on dermatological image datasets for early diagnosis.",
+      tech: ["TensorFlow", "Xception", "Streamlit", "Deep Learning", "Computer Vision"],
+      github: "https://github.com/Iamkvng01/Cancer-Detector",
       color: "primary",
     },
     {
-      title: "NLP with Transformers",
-      description: "Implemented state-of-the-art NLP models using Hugging Face Transformers for text classification, sentiment analysis, and language understanding tasks.",
-      tech: ["Transformers", "Hugging Face", "NLP", "PyTorch", "BERT"],
-      github: "#",
-      demo: "#",
+      title: "Customer Churn Prediction",
+      description: "Machine learning project that predicts whether a customer will churn or stay, based on their profile and service usage data. Demonstrates end-to-end Data Science workflow with Streamlit deployment.",
+      tech: ["Machine Learning", "Python", "Streamlit", "Data Analysis", "Scikit-learn"],
+      github: "https://github.com/Iamkvng01/DataScience-portfolio",
       color: "secondary",
     },
   ];
@@ -80,15 +76,7 @@ const Projects = () => {
                     onClick={() => window.open(project.github, '_blank')}
                   >
                     <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </Button>
-                  <Button
-                    size="sm"
-                    className={`bg-${project.color} hover:bg-${project.color}/90 text-${project.color}-foreground`}
-                    onClick={() => window.open(project.demo, '_blank')}
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
+                    View Code
                   </Button>
                 </div>
               </Card>
