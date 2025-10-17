@@ -72,7 +72,11 @@ const Projects = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className={`border-${project.color} text-${project.color} hover:bg-${project.color} hover:text-${project.color}-foreground`}
+                    className={
+                      project.color === "primary"
+                        ? "border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                        : "border-secondary text-secondary hover:bg-secondary hover:text-black"
+                    }
                     onClick={() => window.open(project.github, '_blank')}
                   >
                     <Github className="w-4 h-4 mr-2" />
